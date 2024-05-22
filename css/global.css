@@ -7,6 +7,27 @@
 @import "/css/variables.css";
 @import "/css/header.css";
 
+/* global css */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  display: flex;
+  object-fit: cover;
+}
 html {
   height: 100%;
 }
@@ -15,6 +36,26 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+.overline {
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 10px;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 main {
   flex-grow: 1;
